@@ -54,14 +54,10 @@ public class SecurityConfig {
         //use HTTP basic authentication
         http.httpBasic(Customizer.withDefaults());
 
-        // disable CRSF since we are using REST APIs that use PUT,POST, GET, DELETE
+        // disable CRSF , REST APIs that use PUT,POST, GET, DELETE
         http.csrf(csrf -> csrf.disable());
 
         return http.build();
-
-
-
-
 
     }
 }

@@ -28,8 +28,6 @@ public class Employee {
     }
 
     //parameterized constructor
-
-
     public Employee(String email, String lastName, String firstName) {
         this.email = email;
         this.lastName = lastName;
